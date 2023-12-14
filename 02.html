@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>picture</title>
+  </head>
+  <body>
+    <!-- <picture> 標籤RWD -->
+    <!-- 若寫在CSS裡面這樣網站會全部都下載圖片 -->
+    <!-- 如果是寫下面方法只會依照尺寸每次讀取一張圖片 -->
+    <picture>
+      <source
+        media="(min-width: 1200px)"
+        srcset="
+          https://images.pexels.com/photos/18772858/pexels-photo-18772858.jpeg?auto=compress&cs=tinysrgb&w=200&dpr=2
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          https://images.pexels.com/photos/19311000/pexels-photo-19311000.jpeg?auto=compress&cs=tinysrgb&w=200&dpr=2
+        "
+      />
+      <img
+        src="https://images.pexels.com/photos/15128096/pexels-photo-15128096.jpeg?auto=compress&cs=tinysrgb&w=200&h=750&dpr=2"
+        alt=""
+      />
+    </picture>
+  </body>
+</html>
