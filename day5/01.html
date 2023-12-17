@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: brown;
+        font-size: 18px;
+      }
+      /* ID優先權最高，但命名不能重複放 */
+      #amos {
+        color: aquamarine;
+      }
+      /* 兩個一起的 class 優先權大於只有一個 class */
+      .special.headline {
+        color: lightpink;
+      }
+      .special {
+        color: darkgreen;
+        font-size: 24px;
+        border-left: 5px solid lightsalmon;
+        border-right: 5px solid lightsalmon;
+        padding: 0 1em;
+      }
+      .headline {
+        color: blue;
+      }
+    </style>
+
+    <!-- 同等選取器，後者複寫前者 -->
+    <!-- ID > class < tag -->
+  </head>
+  <body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="special headline" id="amos">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </body>
+</html>
