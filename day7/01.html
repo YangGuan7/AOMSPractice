@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- dir="rtl" 由右至左得排列方向(書寫) -->
+<!-- 預設是由左至右(書寫方式) -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 父層 */
+      .flex {
+        background-color: #ccc;
+        width: 600px;
+        height: 600px;
+        /* 原本若是 inline 的物件會變成 block */
+        /* 也會讓子層物件變成 block */
+        display: flex;
+        flex-direction: row; /* 預設 */
+      }
+      /* 子層 */
+      .item {
+        background-color: lightcoral;
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        margin: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>
