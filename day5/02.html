@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap {
+        background-color: lightcoral;
+        padding: 20px;
+        text-align: center;
+      }
+      .box {
+        /* block屬性 text-align 不能置中 */
+        /* 但裡面的文字是inline會跟著置中 */
+        /* 要改成inline-block 才能一起置中 */
+        display: inline-block;
+        width: 100px;
+        background-color: lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="box">AABBCC</div>
+    </div>
+  </body>
+</html>
