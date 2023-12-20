@@ -1,0 +1,19 @@
+【position】
+static　靜態(無定位效果)
+
+relative    相對(相對於物件【原始排列位置】)
+absolute    固定(相對於    【視口範圍】)
+fixed       絕對(相對於    【具備定位設定的父層空間】)
+
+sticky
+
+
+
+視口:view port(有滾動垂直卷軸)
+單位vw (view)
+
+Day-8 1:34:30
+100vw(有包含卷軸部分)
+100% (沒有到卷軸部分)
+
+fixed 1:38:18
