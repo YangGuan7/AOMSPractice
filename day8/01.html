@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .card-list {
+        width: 960px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 220px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-content {
+        /* 把剩餘空間給上方內容卡片 */
+        flex-grow: 1;
+        outline: 1px solid lightcoral;
+      }
+      .card .pic-class img {
+        width: 100%;
+      }
+      .pic-teacher {
+        width: 40px;
+      }
+      .card-teacher .pic-teacher img {
+        width: 100%;
+        border-radius: 50%;
+      }
+      .card-teacher {
+        display: flex;
+        align-items: center;
+        outline: 1px solid lightcoral;
+      }
+      .card .price-group {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-list">
+      <div class="card">
+        <div class="card-content">
+          <div class="pic-class">
+            <img src="https://picsum.photos/id/566/300/200" />
+          </div>
+          <h3>Onshape 實戰工廠:探索創新設計的無限可能</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="price-group">
+            <div class="price">NT$ 2800</div>
+            <div class="view">280人瀏覽</div>
+          </div>
+        </div>
+        <div class="card-teacher">
+          <div class="pic-teacher">
+            <img src="https://picsum.photos/id/666/100/100" />
+          </div>
+          <div class="txt-teacher">AMOS</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="pic-class">
+            <img src="https://picsum.photos/id/566/300/200" />
+          </div>
+          <h3>Onshape 實戰工廠:探索創新設計的無限可能</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="price-group">
+            <div class="price">NT$ 2800</div>
+            <div class="view">280人瀏覽</div>
+          </div>
+        </div>
+        <div class="card-teacher">
+          <div class="pic-teacher">
+            <img src="https://picsum.photos/id/666/100/100" />
+          </div>
+          <div class="txt-teacher">AMOS</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="pic-class">
+            <img src="https://picsum.photos/id/566/300/200" />
+          </div>
+          <h3>Onshape 實戰工廠:探索創新設計的無限可能</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing.Lorem ipsum
+            dolor sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet,
+            consectetur adipisicing.
+          </p>
+          <div class="price-group">
+            <div class="price">NT$ 2800</div>
+            <div class="view">280人瀏覽</div>
+          </div>
+        </div>
+        <div class="card-teacher">
+          <div class="pic-teacher">
+            <img src="https://picsum.photos/id/666/100/100" />
+          </div>
+          <div class="txt-teacher">AMOS</div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <div class="pic-class">
+            <img src="https://picsum.photos/id/566/300/200" />
+          </div>
+          <h3>Onshape 實戰工廠:探索創新設計的無限可能</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+          <div class="price-group">
+            <div class="price">NT$ 2800</div>
+            <div class="view">280人瀏覽</div>
+          </div>
+        </div>
+        <div class="card-teacher">
+          <div class="pic-teacher">
+            <img src="https://picsum.photos/id/666/100/100" />
+          </div>
+          <div class="txt-teacher">AMOS</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
